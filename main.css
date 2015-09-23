@@ -1,0 +1,134 @@
+.quoteinput {
+    width: 80%;
+    margin-left: 20px;
+}
+
+.appinfo {
+	
+	text-align: left;
+	
+}
+
+.appinfo h2{
+    margin-top: -23px;
+    border-top: solid thin;
+    border-bottom: solid thin;
+    background-color: white;
+    padding-left: 65px;
+        font-weight: 300;
+}
+.everything {
+	/*text-align: center;*/
+	background-color: #B6C4C7;
+	width: 90%;
+	margin: auto;
+	padding-bottom: 20px;
+	border-radius: 9px;
+	margin-top: .5%;
+}
+
+.header {
+    text-align: left;
+    font-size: 93px;
+    padding-left: 10px;
+    background-color: #D1EFE5;
+    /* font-family: -webkit-pictograph; */
+    font-family: monospace;
+}
+
+.add_quote {
+	    font-size: 20px;
+    margin-left: 30px;
+    padding: 10px;
+}
+
+.add_quote:hover{
+	opacity: .5;
+}
+
+h5 {
+	    margin-bottom: 5px;
+	        text-align: left;
+    margin-left: 23%;
+
+}
+
+input {
+    line-height: 1.5;
+    width: 80%;
+        margin-left: 20px;
+}
+
+
+.submit_forms {
+	       border: solid thin;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 27%;
+    margin-right: 26%;
+    background-color: #D1EFE5;
+    border-radius: 9px;
+}
+
+.submit_forms button {
+    border: none;
+    color: white;
+    font-size: 13px;
+    border-radius: 10px;
+}
+
+.submit_forms button:hover{
+	opacity: .5;
+}
+
+.list_of_quotes {
+	background-color: #54CA9A;
+	color: white;
+	width: 49%;
+	margin: auto;
+	/* padding-bottom: 0px; */
+	border-radius: 9px;
+	border: solid thin;
+	margin-bottom: 10px;
+	padding-top: 0px;
+	/* height: 100px; */
+}
+
+.list_of_quotes h3 {
+	margin-top: 0px;
+}
+
+
+.close_button {
+background-color: red;
+    margin-left: 94%;
+    /* margin-right: 1%; */
+    cursor: pointer;
+    border-radius: 64px;
+    font-size: 9px;
+    padding: 4px;
+    width: 18px;
+    border: none;
+    /* margin-top: 1px; */
+	     }
+
+.close_button:hover {
+	opacity: .5;
+}
+
+
+.quoteDiv{
+	    margin-left: 11%;
+	    text-align: center;
+	    /* margin: auto; */
+	    margin-top: 2px;
+	    margin-right: 10%;
+	    font-weight: 100;
+}
+
+.authorDiv{
+       margin-left: 22%;
+    text-align: left;
+    font-size: 12px;
+    margin-top: 7px;
+}
