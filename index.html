@@ -8,8 +8,8 @@
 <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 
-<body ng-controller="mainController">
-<div class = "everything">
+<body ng-controller="mainController" ng-keyup="escInput($event)" >
+<div class = "everything" >
 
 <div class = "header">
 quoteSavr
@@ -27,15 +27,32 @@ quoteSavr
 </div>
 
 
+<!-- <button class="add_quote" > Add a quote.</button>
+ -->
+ <a href="#img1">
 <button class="add_quote" ng-click="openInput()"> Add a quote.</button>
-
-
-
+</a>
 
 <div class = "list_of_quotes" ng-repeat="object in quotes">
 <h3 > 
 
+
+
+
+
+
+
 <button class = "close_button" ng-click = "closeTheQuote($index)">X</button>
+
+<div class="rating">
+<span ng-click="submitRating($index)">☆
+</span>
+<span ng-click="submitRating($index)">☆
+</span>
+<span ng-click="submitRating($index)">☆
+</span>
+</div>
+
 <div class = "quoteDiv">
 "{{object.quote}}"
 </div>
@@ -46,15 +63,22 @@ quoteSavr
 </div>
 
 
-<h5 ng-hide="hideInput"> ENTER YOUR QUOTE HERE:</h5>
+<!-- <h5 ng-hide="hideInput"> ENTER YOUR QUOTE HERE:</h5> -->
 
-<div class = "submit_forms" ng-hide="hideInput">
+<!-- <div class = "submit_forms" ng-hide="hideInput"> -->
+
+<div href="anything" class="lightbox" id="img1" ng-hide="hideInput">
+
+<div class = "submit_forms" >
+<button class = "close_button" ng-click="closeInput()">X</button>
 <form ng-submit ="submit()">
 		<textarea class="quoteinput" type="text" ng-model= "quote.quote" placeholder="enter quote here..."> </textarea> <br>
 		<input type="text" placeholder= "enter author here..." ng-model= "quote.author">
-			<button> Submit </button>
+			<button
+			ng-click= "closeInput()"> Submit </button>
 </form>
 </div>
+</a>
 </div>
 <script type="text/javascript" src="main.js"></script>
 </body>
