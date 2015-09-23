@@ -11,21 +11,58 @@ $scope.hideInput = true
 
 
 $scope.submit = function() {
-	console.log("you pressed the submit button.")
-	
+
+	for(i=0; i<$scope.quote.rating; i++){
+		$scope.quote.stars.push(i)
+	}
+
+
 	$scope.quotes.push($scope.quote)
-	$scope.quote = ""
+
+	$scope.quote = {
+	quote: "", 
+	author: "",
+	rating: "",
+	stars: []
+	}
+
+
 	console.log($scope.quotes)
 }
 
+	// var ratingToStars = function(n){
+	// 	var stars = ""
+
+	// 	for (var i = 0; i < n; i++) {
+	// 		stars += "&#9733;"
+	// 	};
+
+	// 	return stars
+	// }
+
+
 $scope.quotes = [{quote: "For such small creatures as we, the vastness is only bareable through love.",
-author: "Carl Sagan"}]
+author: "Carl Sagan",
+rating: 3,
+stars: [true,true,true,false,false]
+}]
 
 
 $scope.quote = {
 	quote: "", 
-	author: ""
+	author: "",
+	rating: "",
+	stars: []
 }
+
+
+
+
+// console.log(ratingToStars(5))
+
+
+
+
 
 $scope.openInput = function(){
 	$scope.hideInput=!$scope.hideInput
@@ -40,7 +77,6 @@ $scope.closeInput = function(event){
 }
 
 $scope.escInput = function(event){
-		console.log(event.which)
 		if (event.which === 27) {
 			$scope.hideInput=true
 		}
@@ -49,7 +85,7 @@ $scope.escInput = function(event){
 
 
 $scope.submitRating = function(index) {
-	console.log(index+1+ " many stars")
+	console.log(index+1)
 }
 
 $scope.hideTheLightBox = function() {
@@ -66,8 +102,6 @@ $scope.hideTheLightBox = function() {
 		
 // 	};
 // }
-
-
 
 
 

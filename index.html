@@ -10,70 +10,46 @@
 
 <body ng-controller="mainController" ng-keyup="escInput($event)" >
 <div class = "everything" >
-
-<div class = "header">
-quoteSavr
-
+	<div class = "header">
+	quoteSavr
 </div>
-
-
-
-
-
-
 
 <div class = "appinfo">
-<h2> Store your favorite quotes and rank them!</h2>
+	<h2> Store your favorite quotes and rank them!</h2>
 </div>
 
 
-<!-- <button class="add_quote" > Add a quote.</button>
- -->
- <a href="#img1">
-<button class="add_quote" ng-click="openInput()"> Add a quote.</button>
+<a href="#img1">
+	<button class="add_quote" ng-click="openInput()"> Add a quote.</button>
 </a>
 
-<div class = "list_of_quotes" ng-repeat="object in quotes">
-<h3 > 
+<div class = "list_of_quotes" ng-repeat="(quoteIndex, object) in quotes">
 
+	<h3> 
+	<button class = "close_button" ng-click = "closeTheQuote($index)">X</button>
 
+	<div class="rating">
+		<span class="star" ng-click="submitRating($index)" ng-repeat="star in object.stars track by $index" ng-class="{ 'highlighted': star}">
+		&#9733; 
+		</span>
+	</div>
 
-
-
-
-
-<button class = "close_button" ng-click = "closeTheQuote($index)">X</button>
-
-<div class="rating">
-<span ng-click="submitRating($index)">☆
-</span>
-<span ng-click="submitRating($index)">☆
-</span>
-<span ng-click="submitRating($index)">☆
-</span>
-</div>
-
-<div class = "quoteDiv">
-"{{object.quote}}"
-</div>
-<div class = "authorDiv">
-- {{object.author}}
-</div>
+	<div class = "quoteDiv">
+	"{{object.quote}}"
+	</div>
+	<div class = "authorDiv">
+	- {{object.author}}
+	</div>
 </h3>
 </div>
 
-
-<!-- <h5 ng-hide="hideInput"> ENTER YOUR QUOTE HERE:</h5> -->
-
-<!-- <div class = "submit_forms" ng-hide="hideInput"> -->
-
 <div href="anything" class="lightbox" id="img1" ng-hide="hideInput">
-
 <div class = "submit_forms" >
 <button class = "close_button" ng-click="closeInput()">X</button>
 <form ng-submit ="submit()">
 		<textarea class="quoteinput" type="text" ng-model= "quote.quote" placeholder="enter quote here..."> </textarea> <br>
 		<input type="text" placeholder= "enter author here..." ng-model= "quote.author">
+		<input type="text" placeholder= "enter a rating 1-5" ng-model= "quote.rating">
 			<button
 			ng-click= "closeInput()"> Submit </button>
 </form>

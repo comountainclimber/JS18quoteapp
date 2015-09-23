@@ -13,6 +13,28 @@
 	
 }
 
+
+
+.star{
+  color: grey;
+
+}
+
+.star:hover{
+ color: yellow;
+}
+
+.highlighted{
+  color:yellow;
+}
+
+.rating {
+    text-align: center;
+}
+
+
+
+
 .appinfo h2{
     margin-top: -23px;
     border-top: solid thin;
@@ -61,7 +83,6 @@ input {
     line-height: 1.5;
     width: 80%;
         margin-left: 20px;
-            margin-bottom: 20px;
 }
 
 
@@ -142,7 +163,7 @@ background-color: red;
 
 
 
-
+/*
 .rating {
   unicode-bidi: bidi-override;
   direction: rtl;
@@ -161,7 +182,7 @@ background-color: red;
    position: absolute;
 }
 
-
+*/
 
 
 .lightbox {
