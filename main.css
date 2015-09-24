@@ -8,9 +8,9 @@
 }
 
 .appinfo {
-	
-	text-align: left;
-	
+  
+  text-align: left;
+  
 }
 
 
@@ -44,13 +44,13 @@
         font-weight: 300;
 }
 .everything {
-	/*text-align: center;*/
-	background-color: #B6C4C7;
-	width: 90%;
-	margin: auto;
-	padding-bottom: 20px;
-	border-radius: 9px;
-	margin-top: .5%;
+  /*text-align: center;*/
+  background-color: #B6C4C7;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 20px;
+  border-radius: 100px 100px 10px 10px;
+  margin-top: .5%;
 }
 
 .header {
@@ -60,21 +60,23 @@
     background-color: #D1EFE5;
     /* font-family: -webkit-pictograph; */
     font-family: monospace;
+    padding-top: 90px;
+    border-radius: 40px 40px 0px 0px;
 }
 
 .add_quote {
-	    font-size: 20px;
+      font-size: 20px;
     margin-left: 30px;
     padding: 10px;
 }
 
 .add_quote:hover{
-	opacity: .5;
+  opacity: .5;
 }
 
 h5 {
-	    margin-bottom: 5px;
-	        text-align: left;
+      margin-bottom: 5px;
+          text-align: left;
     margin-left: 23%;
 
 }
@@ -87,7 +89,7 @@ input {
 
 
 .submit_forms {
-	       border: solid thin;
+         border: solid thin;
     padding-top: 10px;
     padding-bottom: 10px;
     margin-left: 27%;
@@ -105,24 +107,24 @@ input {
 }
 
 .submit_forms button:hover{
-	opacity: .5;
+  opacity: .5;
 }
 
 .list_of_quotes {
-	background-color: #54CA9A;
-	color: white;
-	width: 49%;
-	margin: auto;
-	/* padding-bottom: 0px; */
-	border-radius: 9px;
-	border: solid thin;
-	margin-bottom: 10px;
-	padding-top: 0px;
-	/* height: 100px; */
+  background-color: #54CA9A;
+  color: white;
+  width: 49%;
+  margin: auto;
+  /* padding-bottom: 0px; */
+  border-radius: 9px;
+  border: solid thin;
+  margin-bottom: 10px;
+  padding-top: 0px;
+  /* height: 100px; */
 }
 
 .list_of_quotes h3 {
-	margin-top: 0px;
+  margin-top: 0px;
 }
 
 
@@ -137,20 +139,20 @@ background-color: red;
     width: 18px;
     border: none;
     /* margin-top: 1px; */
-	     }
+       }
 
 .close_button:hover {
-	opacity: .5;
+  opacity: .5;
 }
 
 
 .quoteDiv{
-	    margin-left: 11%;
-	    text-align: center;
-	    /* margin: auto; */
-	    margin-top: 2px;
-	    margin-right: 10%;
-	    font-weight: 100;
+      margin-left: 11%;
+      text-align: center;
+      /* margin: auto; */
+      margin-top: 2px;
+      margin-right: 10%;
+      font-weight: 100;
 }
 
 .authorDiv{
