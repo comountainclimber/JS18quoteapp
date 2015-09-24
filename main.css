@@ -1,50 +1,5 @@
-.quoteinput {
-    width: 88%;
-    margin-left: 20px;
-    margin-top: 10px;
-        margin-right: 20px;
-            height: 200px;
-
-}
-
-.appinfo {
-  
-  text-align: left;
-  
-}
-
-
-
-.star{
-  color: grey;
-
-}
-
-.star:hover{
- color: yellow;
-}
-
-.highlighted{
-  color:yellow;
-}
-
-.rating {
-    text-align: center;
-}
-
-
-
-
-.appinfo h2{
-    margin-top: -23px;
-    border-top: solid thin;
-    border-bottom: solid thin;
-    background-color: white;
-    padding-left: 65px;
-        font-weight: 300;
-}
+/*---------------GENERAL-----------------*/
 .everything {
-  /*text-align: center;*/
   background-color: #B6C4C7;
   width: 90%;
   margin: auto;
@@ -53,139 +8,40 @@
   margin-top: .5%;
 }
 
+
+
+/*---------------HEADER-----------------*/
+
 .header {
+  text-align: left;
+  font-size: 93px;
+  padding-left: 10px;
+  background-color: #D1EFE5;
+  font-family: monospace;
+  padding-top: 90px;
+  border-radius: 40px 40px 0px 0px;
+}
+
+.appinfo h2{
+  margin-top: -23px;
+  border-top: solid thin;
+  border-bottom: solid thin;
+  background-color: white;
+  padding-left: 65px;
+  font-weight: 300;
+}
+
+ .appinfo {
+  text-align: left;
+}
+
+/*h5 {
+    margin-bottom: 5px;
     text-align: left;
-    font-size: 93px;
-    padding-left: 10px;
-    background-color: #D1EFE5;
-    /* font-family: -webkit-pictograph; */
-    font-family: monospace;
-    padding-top: 90px;
-    border-radius: 40px 40px 0px 0px;
-}
-
-.add_quote {
-      font-size: 20px;
-    margin-left: 30px;
-    padding: 10px;
-}
-
-.add_quote:hover{
-  opacity: .5;
-}
-
-h5 {
-      margin-bottom: 5px;
-          text-align: left;
     margin-left: 23%;
+}*/
 
-}
-
-input {
-    line-height: 1.5;
-    width: 80%;
-        margin-left: 20px;
-}
-
-
-.submit_forms {
-         border: solid thin;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-left: 27%;
-    margin-right: 26%;
-    background-color: #D1EFE5;
-    border-radius: 9px;
-    margin-top: 40px;
-}
-
-.submit_forms button {
-    border: none;
-    color: white;
-    font-size: 8px;
-    border-radius: 10px;
-}
-
-.submit_forms button:hover{
-  opacity: .5;
-}
-
-.list_of_quotes {
-  background-color: #54CA9A;
-  color: white;
-  width: 49%;
-  margin: auto;
-  /* padding-bottom: 0px; */
-  border-radius: 9px;
-  border: solid thin;
-  margin-bottom: 10px;
-  padding-top: 0px;
-  /* height: 100px; */
-}
-
-.list_of_quotes h3 {
-  margin-top: 0px;
-}
-
-
-.close_button {
-background-color: red;
-    margin-left: 94%;
-    /* margin-right: 1%; */
-    cursor: pointer;
-    border-radius: 64px;
-    font-size: 8px;
-    padding: 4px;
-    width: 18px;
-    border: none;
-    /* margin-top: 1px; */
-       }
-
-.close_button:hover {
-  opacity: .5;
-}
-
-
-.quoteDiv{
-      margin-left: 11%;
-      text-align: center;
-      /* margin: auto; */
-      margin-top: 2px;
-      margin-right: 10%;
-      font-weight: 100;
-}
-
-.authorDiv{
-       margin-left: 22%;
-    text-align: left;
-    font-size: 12px;
-    margin-top: 7px;
-}
-
-
-
-
-/*
-.rating {
-  unicode-bidi: bidi-override;
-  direction: rtl;
-      text-align: center;
-    color: #C9E24B;
-    margin-bottom: 15px;
-}
-.rating > span {
-  display: inline-block;
-  position: relative;
-  width: 1.1em;
-}
-.rating > span:hover:before,
-.rating > span:hover ~ span:before {
-   content: "\2605";
-   position: absolute;
-}
-
-*/
-
+/*---------------LIGHTBOX-----------------*/
 
 .lightbox {
   /** Hide the lightbox */
@@ -217,6 +73,159 @@ background-color: red;
   /** Remove default browser outline style */
   outline: none;
 }
+
+/*---------------QUOTE INPUT-----------------*/
+
+.quoteinput {
+  width: 88%;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-right: 20px;
+  height: 200px;
+}
+
+input {
+  line-height: 1.5;
+  width: 90%;
+  margin-left: -2px;
+}
+
+.submit_forms {
+  border: solid thin;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-left: 27%;
+  margin-right: 26%;
+  background-color: #D1EFE5;
+  border-radius: 9px;
+  margin-top: 40px;
+}
+
+/*---------------QUOTES-----------------*/
+
+.star{
+  color: grey;
+}
+
+.star:hover{
+  color: yellow;
+  cursor: pointer;
+}
+
+.highlighted{
+  color:yellow;
+}
+
+.rating {
+  text-align: center;
+}
+
+.quoteDiv {
+  margin-left: 11%;
+  text-align: center;
+  margin-top: 2px;
+  margin-right: 10%;
+  font-weight: 100;
+}
+
+.authorDiv{
+  margin-left: 22%;
+  text-align: left;
+  font-size: 12px;
+  margin-top: 7px;
+}
+
+.list_of_quotes {
+  background-color: #54CA9A;
+  color: white;
+  width: 49%;
+  margin: auto;
+  border-radius: 9px;
+  border: solid thin;
+  margin-bottom: 10px;
+  padding-top: 0px;
+}
+
+.list_of_quotes h3 {
+  margin-top: 0px;
+}
+
+
+/*---------------BUTTONS-----------------*/
+
+
+.submit_forms button {
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 10px;
+    margin-top: 10px;
+    /* height: 30px; */
+    padding: 7px;
+}
+
+.submit_forms button:hover{
+  opacity: .5;
+}
+
+.close_button {
+  background-color: red;
+  margin-left: 94%;
+  cursor: pointer;
+  border-radius: 64px;
+  font-size: 8px;
+  padding: 4px;
+  width: 18px;
+  border: none;
+       }
+
+.submit_forms .close_button{
+      width: 22px;
+    padding: 3px;
+    /* margin-right: 3px; */
+    border-radius: 20px;
+    margin-left: 88%;
+}
+
+.close_button:hover {
+  opacity: .5;
+  cursor:pointer;
+}
+
+.add_quote {
+  font-size: 20px;
+  margin-left: 30px;
+  padding: 10px;
+}
+
+.add_quote:hover{
+  opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,4 @@
+ 1.) if a user clicks on an author's name they can see a all the quotes by that author
+
+ 2.) Random quote button will pick a random quote and integrate the light box view.
+
